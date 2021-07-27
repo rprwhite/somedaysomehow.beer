@@ -9,24 +9,52 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <style>
-    body {
+    body, div {
+      margin: 0;
       display: flex;
-      font-family: serif;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-family: sans-serif;
       background-color: #424242;
       color: #FFFFFF;
-      font-size: large;
+      font-size: medium;
+      line-height: 150%;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+    }
+
+    div {
+      width: 90%;
+    }
+
+    p {
+      max-width: 50rem;
+      text-align: center;
+    }
+    .logo_text img {
+      width: 90vw;
+      max-width: 30rem;
     }
   </style>
 </head>
 <body>
-<h1>The Sophisticated Beast</h1>
-<p>We are a small brewery who thinks big. We don’t dabble in the mundane,
-favouring wild ferment, farmhouse style beers that challenge your mind
-as much as your palate. We push back against the assumption that the fun
-beers have to be seasonal - we do fun all year round. Although our beers are
-unconventional, that doesn’t mean they are unsophisticated - above all our
-beers are flavoursome, well-made and unforgettable.</p>
+<div class="logo_text">
+  <img src="media/Logo_white_text_only.svg" alt="The Sophisticated Beast">
+</div>
+<div class="blurb">
+  <p>We are a small brewery who thinks big. We don’t dabble in the mundane,
+  favouring wild ferment, farmhouse style beers that challenge your mind
+  as much as your palate. We push back against the assumption that the fun
+  beers have to be seasonal - we do fun all year round. Although our beers are
+  unconventional, that doesn’t mean they are unsophisticated - above all our
+  beers are flavoursome, well-made and unforgettable.</p>
+</div>
+<div class="address">
+  <p>2/30 Burler Drive<br>Vasse, WA</p>
+</div>
 </body>
 </html>
